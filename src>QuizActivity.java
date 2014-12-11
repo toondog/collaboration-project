@@ -103,3 +103,58 @@ Toast.LENGTH_SHORT) .show();
 			public void onClick(View v) {
 				
 				if(mCurrentIndex != 0
+		{
+			mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
+				
+				updateQuestion();
+			}
+			});
+			
+		}
+		
+		@Override
+		
+		public boolean on CreateOptionsMenu(Menu menu) {
+			//Inflate the menu; this adds items to the action bar if it is present.
+			
+		getMenuInflater().inflate(R.menu.activity_quiz, menu);
+		return true;
+		
+			//suren portion, TrueFalse Java
+		public void onClick(view v) {
+
+//Toast.makeText(QuizActivity.this, R.string.incorrect_toast, 
+Toast.LENGTH_SHORT) .show();
+							chechAnswer(false)
+							}
+			});
+			
+			mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
+			updateQuestion();
+			
+			
+			mNextButton = (Button)findViewById(R.id.next_button);
+			mNextButton.setOnClickListener(new View.OnCliickListener() {
+			
+			
+			@Override
+			
+			public void onClick(View v) {
+				mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+				updateQuestion();
+				
+			}
+			});
+			
+		mPreviousButton = (Button)findViewById(R.id.previous_button);
+			mPreviousButton.setOnClickListener(new View.OnCliickListener() {
+			
+			@Override
+			
+			public void onClick(View v) {
+				
+				if(mCurrentIndex != 0
+		
+		}
+		}
+	
