@@ -1,4 +1,4 @@
-package com.example.geoquizlabsolution;
+package com.example.geoquizlab1solution;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,12 +8,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Quiz Activity extends Activity {
+public class QuizActivity extends Activity {
 	
 	private Button mTrueButton;
 	private Button mFalseButton;
 	private Button mNextButton;
 	private Button mPreviosButton;
+	private TextView mQuestionTextView;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
 			new TrueFalse(R.string.question_chatdump, true),
@@ -23,37 +24,40 @@ public class Quiz Activity extends Activity {
 			new TrueFalse(R.string.question_wine, true)
 			};
 			
-private int mCurrentIndex=0;
+	private int mCurrentIndex=0;
 
-private void updateQuestion(){
+	private void updateQuestion(){
 	int question = mQuestionBank[mCurrentIndex].getQuestion();
 	mQuestionTextView.setText(question);
+	
+		
 	}
 	
 	private void checkAnswer(booolean userPressedTrue) {
-	boolean answerIs True = mQuestionBank[mQuestionBank[mCurrentIndex].IStRUEqUESTION();
+	boolean answerIs True = mQuestionBank[[mCurrentIndex].IsTrueQuestion();
 		int messageId = 0;
 
-if (userPressedTrue == answerIsTrue) {
+	if (userPressedTrue == answerIsTrue) {
 	messageResId = R.string.correct_toast;
 	}
 	else{
-		messageId = R.string.incorrect_toast;
+		messageResId = R.string.incorrect_toast;
 		}
 	Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
 	}
+	
 	
 	@Override
 		protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_quiz);
 		
-		mTrueButton = (Button = (Button)findViewById(R.Idtrue_button);
+		mTrueButton = (Button) =findViewById(R.Id.true_button);
 		mTrueButton.setOnClickListener(new View.OnClickListener() {
 		
 		@Override	
 			public void onClick(View v) {
-	//Toat.makeText(QuizActivity.this,R.string.correct_toast,
+	//Toast.makeText(QuizActivity.this,R.string.correct_toast,
 	Toast.LENGTH_SHORT).show();
 	
 				checkAnswer(true);
