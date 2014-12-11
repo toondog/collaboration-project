@@ -285,5 +285,44 @@ public final class R {
 			public static final int correct_toast=0x7f040007;
 			public static final int false_button=0x7f040003;
 			public static final int incorrect_toast=0x7f040008;
-		}
+	
+	
+
+		public static final int menu_settings=0x7f04000;
+		public static final int next_button=0x7f040004;
+		public static final int previous-button=0x7f040005;
+		public static final int question_chatdump=0x7f050009;
+		public static final int question_mines=0x7f04000a;
+		public static final int question_mtlion=ox7f04000b;
+		public static final int question_quakes=0x7f04000b;
+		public static final int question_text=0x7f040001;
+		public static final int question_wine=0x7f04000c;
+		public static final int true_button=0x7f040002;
+
+	}	
+		public static final class style {
+
+		/**
+
+		Base applicationtheme,dependent on API level. This theme is replaced 
+		by AppBaseTheme from res?values-vXX/styles.xml on newer devices.
+
+		theme customization available in newer API levels can go in res/value-vXX/styles.xml, while customizations related to backward-compatibility can go here.
+
+	Base application theme for API 11+. This theme completely replaces AppBaseTheme from res/values/styles.xml on API 11+ devices.
+
+API theme customizations can go here.
+	
+	Base application theme for API 14+. This theme completely replaces AppBaseTheme from BOTH res/values/styles.xml and res/values-v11/styles.xml on API 14+ devices.
+
+	API 14 theme customization can go here.
+
+	*/
+	public static final int AppBaseTheme=0x7f050000;
+	/** Application theme.
+All customizations that are not specific to a paarticular AFI-level can go here.
+
+	*/
+	public static final int AppTheme=0x7f050001;
+	}
 }
