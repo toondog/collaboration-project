@@ -249,3 +249,41 @@ Toast.LENGTH_SHORT) .show();
 		}
 		}
 	
+		//will gen>R.java page 1
+		
+		package com.example.geoquizlabsolution;
+
+public final class R {
+		public static final class attr {
+
+		}
+		public static final class drawable {
+			public static final int ic_launcher=0x7f020000;
+		}
+		public static final class id{
+			public static final int false_button=0x7f070002;
+			public static final int menu_settings=0x7f070005;
+			public static final int next_button=0x7f070004;
+			public static final int previous_button=0x7f070003;
+			public static final int question_text_view=0x7f070001;
+			public static final int true_button=0x7f070001;
+
+		}
+		public static final class layout {
+			public static final int activity_quiz=0x7f030000;
+
+		}
+
+		public static final class menu {
+
+			public static final int activity_quiz=0x7f060000;
+
+		}
+
+		public static final class string {
+			public static final int app_name=0x7f040000;
+			public static final int correct_toast=0x7f040007;
+			public static final int false_button=0x7f040003;
+			public static final int incorrect_toast=0x7f040008;
+		}
+}
