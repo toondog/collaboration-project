@@ -56,16 +56,50 @@ public class QuizActivity extends Activity {
 		mTrueButton.setOnClickListener(new View.OnClickListener() {
 		
 		@Override	
+	//MikoHov page		
 			public void onClick(View v) {
 	//Toast.makeText(QuizActivity.this,R.string.correct_toast,
 	Toast.LENGTH_SHORT).show();
 	
 				checkAnswer(true);
 				
-			}
+				}
 			});
 			
 			mFalseButton = (Button)findViewById(R.id.false_button);
 			mFalseButton.setOnClickListener(new View.OnClickListener() {
 			
 				@Override
+public void onClick(view v) {
+
+//Toast.makeText(QuizActivity.this, R.string.incorrect_toast, 
+Toast.LENGTH_SHORT) .show();
+							checkAnswer(false)
+							}
+			});
+			
+			mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
+			updateQuestion();
+			
+			
+			mNextButton = (Button)findViewById(R.id.next_button);
+			mNextButton.setOnClickListener(new View.OnCliickListener() {
+			
+			
+			@Override
+			
+			public void onClick(View v) {
+				mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+				updateQuestion();
+				
+			}
+			});
+			
+		mPreviousButton = (Button)findViewById(R.id.previous_button);
+			mPreviousButton.setOnClickListener(new View.OnCliickListener() {
+			
+			@Override
+			
+			public void onClick(View v) {
+				
+				if(mCurrentIndex != 0
