@@ -1,3 +1,94 @@
+//Suren portion activity quiz.xml
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<TextView
+			android:id="@+id/question_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="24dp"
+			android:text="@string/question_text"/>
+			
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+		<Button
+			android:id="@+id/true_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/true_button" />
+			
+		<Button
+			android:id="@+id/false_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/false_button" />
+			
+		</LinearLayout
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+				
+				<Button
+			android:id="@+id/previous_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/previous_button" />
+			
+		<Button
+			android:id="@+id/next_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/next_button" />
+		</LinearLayout
+
+	</LinearLayout
+//MikoHov prtion strings.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+	<string name="app_name">GeoQuizLab1Solution</string>
+	
+	<string name="question_text">The St. Louis Arch is next to the Mississippi River.</String>
+	
+	<string name="true_button">True</string>
+	
+	<string name="false_button">False</string>
+	
+	<string name="next_button">Next</string>
+	
+	<string name="previous_button">Previous</string>
+	
+	<string name="menu_settings">Settings</string>
+	
+	<string name="correct_toast">Correct!</string>
+	
+	<string name="incorrect_toast">Incorrect!</string>
+	
+	<string name="question_chatdump">The Desloge chat dump was once the largest mountain.</string>
+	
+	<string name="question_mines">Scuba diving is not allowed in the Bonne Terre mines</string>
+	
+	<string name="question_quakes">There has never been an earthquake in Missouri</string>
+	
+	<string name="question_wine">Ste Genevieve has a growing wine industry</string>
+	
+	<string name="question_mtlion">There are no mountain liions in Missouri.</string>
+	
+</resources>
+
+
+//will portion QuizActivity.java
 package com.example.geoquizlab1solution;
 
 import android.app.Activity;
